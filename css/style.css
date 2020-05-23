@@ -1,0 +1,699 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header-area
+3. home-slider-area
+4. products-area
+5. feature-area
+6. process-area
+7. footer-area
+*/
+/* 1. Theme default css */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alex+Brush&display=swap");
+/*font-family: 'Alex Brush', cursive;*/
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.fix {
+	overflow: hidden;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2b96cc;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative;
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2;
+}
+:focus {
+	outline: none;
+	border: none;
+}
+/* button style */
+.btn {
+	-moz-user-select: none;
+	background: #1696e7 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 13px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2b96cc;
+	color: #fff;
+}
+/* scrollUp */
+#scrollUp {
+	background: #7dba2f;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #444;
+}
+/* -- header-area start -- */
+.search-icon a,
+.user-action a {
+	font-size: 11px;
+	color: #414141;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 24px;
+}
+.search-icon img {
+	margin-right: 19px;
+}
+.user-action a {
+	margin-left: 28px;
+	display: inline-block;
+}
+.logo {
+	padding-top: 52px;
+	padding-bottom: 63px;
+}
+.navigation {
+	padding-bottom: 26px;
+}
+.navigation ul {
+	text-align: center;
+}
+.navigation li {
+	display: inline-block;
+}
+.navigation a {
+	color: #45505e;
+	font-size: 11px;
+	margin: 0px 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.navigation a:hover {
+	color: #8ed1b7;
+}
+/* -- header-area end -- */
+/* -- home-slider-area start-- */
+.home-slider-area {
+	background: #ade1c5;
+}
+.slider-height {
+	height: 575px;
+}
+.slider-content {
+	color: #000;
+	text-align: left;
+	padding: 212px 0;
+}
+.slider-content h4 {
+	font-family: "Alex Brush", cursive;
+	font-size: 73px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.slider-content h4 span {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 23px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	line-height: 24px;
+}
+.slider-content h2 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 72px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 72px;
+	margin-bottom: 36px;
+	color: #000000;
+}
+.slider-content h2 span {
+	font-size: 24px;
+	position: absolute;
+	line-height: 40px;
+	font-weight: 400;
+}
+.slider-content a {
+	line-height: 24px;
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: underline !important;
+	font-family: "Roboto", sans-serif;
+}
+
+.slick-dots {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+}
+.slick-dots button {
+	font-family: "Titillium Web", sans-serif;
+	color: #232e28;
+	font-size: 16px;
+	background: transparent;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: right;
+	outline: none;
+}
+.slick-dots li {
+	position: relative;
+	margin-bottom: 16px;
+	padding-right: 20px;
+}
+.slick-dots li:after {
+	position: absolute;
+	bottom: 0;
+	width: 80px;
+	height: 1px;
+	background: #9fcfb4;
+	content: "";
+	right: 0;
+}
+.slick-active:after {
+	width: 120px !important;
+}
+.slick-active button {
+	color: #fff;
+}
+/* -- home-slider-area end-- */
+/* -- products-area start -- */
+.category {
+	border-bottom: 1px solid #f1f1f1;
+}
+.category-tittle {
+	text-align: left;
+}
+.category-tittle li {
+	display: inline-block;
+	color: #45505e;
+	font-family: "Roboto", sans-serif;
+	font-size: 11px;
+	margin: 0px 14px;
+	text-transform: uppercase;
+}
+.category-tittle i {
+	color: #45505e;
+}
+.category-tittle li:hover {
+	color: #8ed1b7;
+}
+.search-box {
+	text-align: right;
+}
+.search-box a {
+	color: #45505e;
+	font-family: "Roboto", sans-serif;
+	font-size: 11px;
+	margin: 0px 14px;
+	text-transform: uppercase;
+}
+.search-box img {
+	margin-right: 14px;
+}
+.products {
+	margin-top: 75px;
+}
+.single-product {
+	box-shadow: 0px 0px 76px 0px rgba(231, 231, 231, 0.66);
+	margin-bottom: 38px;
+}
+.product-img {
+	height: 257px;
+	overflow: hidden;
+	position: relative;
+}
+.product-img img {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.product-info {
+	text-align: center;
+	padding: 58px 30px 38px 30px;
+}
+.product-info h4 {
+	font-size: 23px;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 19px;
+}
+.product-info h6 {
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #8ed1b7;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 38px;
+	margin-bottom: 38px;
+}
+.product-info h6 span {
+	color: #000;
+	margin-right: 10px;
+	text-decoration: line-through;
+}
+.product-info a {
+	color: #000;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.product-info img {
+	margin-right: 10px;
+}
+.product-badge {
+	background: #8ed1b7;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	border-radius: 50px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 14px;
+	z-index: 999999;
+	transition: 0.3s;
+}
+.hover-content {
+	position: absolute;
+	left: -95px;
+	top: 0;
+	background: #fff;
+	height: 100%;
+	width: 95px;
+	padding: 30px 34px;
+	transition: 0.3s all ease;
+}
+.hover-content img {
+	width: inherit;
+}
+.hover-content a {
+	display: block;
+	color: #333;
+	margin-bottom: 40px;
+}
+.hover-content i {
+	font-size: 18px;
+	color: #333;
+}
+.single-product:hover .hover-content {
+	left: 0;
+}
+.single-product:hover .product-badge {
+	left: 70px;
+}
+/* -- products-area end -- */
+/* -- feature-area start -- */
+.price-tag {
+	height: 240px;
+	width: 240px;
+	border-radius: 50%;
+	background: #e7a8c6;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 123px;
+	bottom: 136px;
+}
+.price-tag span {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #333;
+	font-weight: 400;
+	text-decoration: line-through;
+	display: block;
+	text-align: right;
+}
+.price-tag h5 {
+	font-family: "Roboto", sans-serif;
+	font-size: 45px;
+	color: #fff;
+	font-weight: 400;
+}
+.feature-text {
+	margin-left: 85px;
+	padding-top: 327px;
+	padding-bottom: 205px;
+}
+.feature-text h6 {
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.feature-text h3 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 23px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+.feature-text p {
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	line-height: 24px;
+	margin-bottom: 52px;
+	padding-right: 35%;
+	margin-bottom: 38px;
+}
+.feature-text a {
+	font-size: 12px;
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	text-decoration: underline !important;
+	text-transform: uppercase;
+}
+.feature-content h2 {
+	font-weight: 300;
+	font-size: 168px;
+	position: absolute;
+	top: 35px;
+	left: 100px;
+	opacity: 0.1;
+	letter-spacing: 20px;
+}
+.vertical-content {
+	position: relative;
+	margin-left: auto;
+}
+.vertical-content h4 {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 23px;
+	letter-spacing: 35px;
+	color: #000;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	padding: 40px 0;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+/* -- feature-area end -- */
+/* --process-area start-- */
+.single-process-item {
+	background: #1d1e24;
+	text-align: center;
+	padding: 36px 70px;
+	height: 256px;
+}
+.single-process-item img {
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+.single-process-item h4 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.1;
+	margin-bottom: 20px;
+}
+.single-process-item p {
+	font-size: 14px;
+	color: #767676;
+}
+/* --process-area end-- */
+/* -- footer-area start -- */
+.single-footer-item {
+	color: #7b7c85;
+	font-size: 13px;
+}
+.single-footer-item p {
+	padding-right: 20%;
+}
+.single-footer-item a {
+	color: #7b7c85;
+	line-height: 1;
+	margin-bottom: 26px;
+	display: block;
+}
+.single-footer-item h2 {
+	color: #1d1e24;
+	font-size: 18px;
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 500;
+	margin-bottom: 28px;
+}
+.useful-links {
+	float: left;
+	width: 50%;
+}
+.useful-links li {
+	display: block;
+}
+.social-img {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: stretch;
+}
+.social-img a {
+	margin: 3px;
+	width: 75px;
+	height: 75px;
+}
+.social-img img {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.bottom-area {
+	border-top: 1px solid #f1f1f1;
+}
+.bottom-area p {
+	font-weight: 400;
+	font-size: 13px;
+	text-align: left;
+	margin: 0;
+	line-height: 0;
+	padding-top: 40px;
+}
+.bottom-area img {
+	padding-top: 13px;
+	padding-bottom: 12px;
+}
+/* -- footer-area end -- */

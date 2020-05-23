@@ -1,2 +1,0 @@
-# shopX
-practical action
